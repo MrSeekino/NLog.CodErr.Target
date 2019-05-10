@@ -13,7 +13,7 @@
     <Copyright>Copyright © Andrea Pittaluga 2019</Copyright>
     <PackageLicenseUrl>https://raw.githubusercontent.com/MrSeekino/NLog.CodErr.Target/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/MrSeekino/NLog.CodErr.Target</PackageProjectUrl>
-    <PackageTags>EntityFramework</PackageTags>
+    <PackageTags>nlog coderr logging target</PackageTags>
     <Description>An NLog target that allows your app to send errors to an instance of CodErr</Description>
   </PropertyGroup>
   <ItemGroup>
