@@ -59,4 +59,5 @@ The following are the available options for the target that can be specified as 
 - retryIntervalMinutes: minutes to wait until the next try when an error is failed to be sent [Default: 5]
 - async: whether the process that send errors is async or not [Default: True]
 - onlyExceptions: whether to send only errors containing an exception or also those with just text messages [Default: True]
+- enabled: enable/disable the target without the need to remove its configuration [Default: True]
 ```
