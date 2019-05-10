@@ -21,6 +21,8 @@ namespace NLog.CodErr.Target
         public bool Async { get; set; } = true;
         public bool OnlyExceptions { get; set; } = true;
 
+        public bool Enabled { get; set; } = true;
+
         public CodErrTarget() : base() { }
 
         protected override void InitializeTarget()
@@ -40,6 +42,9 @@ namespace NLog.CodErr.Target
 
         protected override void Write(LogEventInfo logEvent)
         {
+            if (!Enabled)
+                return;
+
             if (OnlyExceptions && logEvent.Exception == null)
                 return;
 

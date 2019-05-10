@@ -10,3 +10,4 @@
 /Examples/NLog.CodErr.Target.Examples.Runner/obj
 /Sources/.vs/NLog.CodErr.Target/DesignTimeBuild
 /Sources/NLog.CodErr.Target/bin/Debug
+/Sources/NLog.CodErr.Target/bin/Release
