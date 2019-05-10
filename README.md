@@ -20,3 +20,43 @@ This software is distributed under the terms of the Free Software Foundation [Le
 Examples
 --------
 An example project that uses EntityFramework.FluentHelper can be found under the [Examples](https://github.com/MrSeekino/NLog.CodErr.Target/tree/master/Examples) folder in current repository.
+
+Usage
+-----
+Add NLog.CodErr.Target to your project, than edit your NLog configuration has shown below:
+
+Add assembly to your extensions
+```
+<extensions>
+  <add assembly="NLog.CodErr.Target"/>
+</extensions>
+```
+
+Add a target with type **CodErr**
+```
+<targets>
+  <target name="codErr" xsi:type="CodErr" appUrl="http://mycoderr.uri" appKey="myKey" appSecret="mySecret"  />
+</target>
+```
+
+Add a rules for the target
+```
+<rules>
+  <logger name="*" minlevel="Info" writeTo="codErr" />
+</rules>
+```
+
+Target Options
+--------------
+The following are the available options for the target that can be specified as target attributes
+
+```
+- appUrl: the url of your coderr instance [Required]
+- appKey: the app key to use when sending errors [Required]
+- appSecret: the app secret to use when sending errors [Required]
+- maxAttempts: maximum number of tries to send an error [Default: 3]
+- maxQueueSize: maximum size of errors in internal queue to be sent [Default: 10]
+- retryIntervalMinutes: minutes to wait until the next try when an error is failed to be sent [Default: 5]
+- async: whether the process that send errors is async or not [Default: True]
+- onlyExceptions: whether to send only errors containing an exception or also those with just text messages [Default: True]
+```
