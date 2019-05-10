@@ -36,7 +36,7 @@ Add a target with type **CodErr**
 ```
 <targets>
   <target name="codErr" xsi:type="CodErr" appUrl="http://mycoderr.uri" appKey="myKey" appSecret="mySecret"  />
-</target>
+</targets>
 ```
 
 Add a rules for the target
