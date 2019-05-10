@@ -15,6 +15,7 @@
     <PackageProjectUrl>https://github.com/MrSeekino/NLog.CodErr.Target</PackageProjectUrl>
     <PackageTags>nlog coderr logging target</PackageTags>
     <Description>An NLog target that allows your app to send errors to an instance of CodErr</Description>
+    <Version>1.0.1</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Coderr.Client" Version="1.1.0" />
