@@ -3,3 +3,10 @@
 ################################################################################
 
 /.vs
+/Sources/.vs/NLog.CodErr.Target/v16
+/Sources/NLog.CodErr.Target/obj
+/Examples/.vs/NLog.CodErr.Target.Examples
+/Examples/NLog.CodErr.Target.Examples.Runner/bin/Debug
+/Examples/NLog.CodErr.Target.Examples.Runner/obj
+/Sources/.vs/NLog.CodErr.Target/DesignTimeBuild
+/Sources/NLog.CodErr.Target/bin/Debug
